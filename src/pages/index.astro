@@ -2,25 +2,32 @@
 import MainLayout from "../layouts/MainLayout.astro";
 import Button from '../components/Button.astro';
 ---
-<MainLayout title="Astro, Tailwind & Alpine">
-	<h1>Astro, Tailwind & Alpine</h1>
-	<p>Astro, Tailwind & Alpine kombineret i en fin, lille starter:-)</p>
-	<p class="text-xl">Det bliver <span class="italic">flot</span> med Tailwind</p>
-		<div class="pb-8" x-data="{open: false}">
-			<p class="text-xl underline" x-on:click="open = ! open";>Og sejt!</p>
-			<div x-show="open" x-transition><Button></Button></div>
+<MainLayout title="Astro, Tailwind, Alpine, Motion One og Animate CSS Starter">
+	<article class="prose" x-data>
+		<h1>Astro, Tailwind, Alpine, Motion One og Animate CSS kombineret i en fin, lille starter:-)</h1>
+		<p>Brug starteren til at komme godt i gang med dine Digital Design projekter</p>
+		<p>Se også:</p>
+		<ul>
+			<li><a href="https://astro.build/" alt="Astro Website" target="_blank">Astro</a></li>
+			<li><a href="https://tailwindcss.com/" alt="Tailwind CSS website" target="_blank">Tailwind</a></li>
+			<li><a href="https://alpinejs.dev/" alt="Alpine JS website" target="_blank">Alpine.js</a></li>
+			<li><a href="https://motion.dev/" alt="Motion One website" target="_blank">Motion One</a></li>
+			<li><a href="https://animate.style/" alt="Animate.CSS website" target="_blank">Animate CSS</a></li>
+		</ul>
+		<p>
+			Start med at clone repo'et fra Github: <a href="https://github.com/stefangrage/astro-tailwind-alpine-motion-animate-starter" alt="Astro, Tailwind, Alpine, Motion One og Animate CSS Starter">https://github.com/stefangrage/astro-tailwind-alpine-motion-animate-starter</a>
+		</p>
+		<p>
+			Tilpas derefter indholdet i "pages, layouts, components og assets...
+		</p>
+		<p>
+			Og vigtigst af alt: Lav noget godt:-)
+		</p>
+		<p>
+			Se også <a href="http://motherfuckingwebsite.com/" alt="mf website">dette lille site</a> for lidt inspiration.
+		</p>
+		<div>
+		<Button>Fang mig hvis du kan:-)</Button>
 		</div>
-		<article class="prose lg:prose-xl">
-			<h1>Garlic bread with cheese: What the science tells us</h1>
-			<p>
-			  For years parents have espoused the health benefits of eating garlic bread with cheese to their
-			  children, with the food earning such an iconic status in our culture that kids will often dress
-			  up as warm, cheesy loaf for Halloween.
-			</p>
-			<p>
-			  But a recent study shows that the celebrated appetizer may be linked to a series of rabies cases
-			  springing up around the country.
-			</p>
-			<!-- ... -->
-		  </article>
+	</article>
 </MainLayout>
